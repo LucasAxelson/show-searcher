@@ -6,23 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Show Search</title>
-    <link rel="stylesheet" href="/mini-projects/tv-show-axios/main.css">
+    <link rel="stylesheet" href="/main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-    <h1>Tv Show Search</h1>
-    <form id="searchForm">
-        <input type="text" placeholder="TV Show Title" name="query">
-        <button id="searchBtn">Search</button>
-        <button id="resetBtn">Reset</button>
 
-        <div id="box" class="container">
+    <main>
+
+        <header id="wrapper">
+            <h1>TV Show Search</h1>
+
+            <section>
+                <form id="searchForm">
+                    <input type="text" placeholder="TV Show Title" name="query">
+                    <div id="buttons">
+                        <button id="searchBtn">Search</button>
+                        <button id="resetBtn">Reset</button>
+                    </div>
+
+        </header>
+
+        <section>
+            <div id="box" class="container">
+
+            </div>
+        </section>
+
+        </form>
+        </section>
 
         </div>
-    </form>
+    </main>
 
-    <script src="/mini-projects/tv-show-axios/app.js"></script>
+    <script src="/app.js"></script>
 </body>
 
 </html>
