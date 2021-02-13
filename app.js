@@ -51,16 +51,17 @@ const Util = {
         if (result.show.genres || result.show.rating) {
             const name = document.createElement('p')
             name.setAttribute("id", "name")
-            name.innerText = result.show.name
+            name.innerHTML = `<h3>${result.show.name}</h3>`
             subtitle.append(name)
 
             const rating = document.createElement('p')
             rating.setAttribute("id", "rating")
             rating.innerText = result.show.rating.average
-            if (rating.innerText.length > 0) {
+            if (rating.innerText !== "") {
+                rating.innerHTML = `<b>Rating: </b>${result.show.rating.average}`
                 subtitle.append(rating)
             } else {
-                rating.innerText = "Not found"
+                rating.innerHTML = "<b>Rating: </b>Not found"
                 subtitle.append(rating)
             }
 
@@ -73,6 +74,7 @@ const Util = {
     genres(result) {
         const ul = document.createElement('ul')
         const genres = result.show.genres
+        ul.innerHTML = "<b>Genre: </b>"
 
         if (genres.length > 0) {
             for (let i = 0; i < genres.length - 1; i++) {

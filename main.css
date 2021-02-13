@@ -77,7 +77,7 @@ form #buttons button:hover {
 }
 
 #showBox img {
-    margin: 1rem;
+    margin-top: 1rem;
     border: 2.5px solid black;
 
     height: 295px;
@@ -91,4 +91,8 @@ form #buttons button:hover {
 ul, span {
     padding-right: 0.35rem;
     text-align: center;
+}
+
+#name, #rating {
+    margin: 0.25rem;
 }
